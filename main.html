@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<link rel="Style" href="Style.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <title>Valutakonverter</title>
 </head>
 <body>
-    
+    <div class="Wrapper">
+        <header>Valutakonverter</header>
+        <form action="#">
+            <div class="Mengde">
+                <p>Skriv inn Mengde</p>
+                <input type="text" id="usdAmount" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="Fra">
+                    <p>Fra</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select id="fromCurrency">
+                            <option value="USD">USD</option>
+                            <option value="NOK">NOK</option>
+                            <option value="HRK">HRK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><img src="bilder/loop.png" alt=""></div>
+                <div class="Til">
+                    <p>Til</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/NO/flat/64.png" alt="flag">
+                        <select id="toCurrency">
+                            <option value="USD">USD</option>
+                            <option value="NOK">NOK</option>
+                            <option value="HRK">HRK</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button onclick="calculate()">Finn vekslingskurs</button>
+            <!-- Result container -->
+            <div class="result-container" id="result-container"></div>
+        </form>
+    </div>
     <script src="Script1.js"></script>
 </body>
 </html>

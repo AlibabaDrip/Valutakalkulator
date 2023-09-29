@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: #c8d9f5;
+    text-align: center;
+}
+
+.Wrapper{
+  
+  width: 370px;
+  padding: 30px;
+  border-radius: 15px;
+  background: white;
+}
+
+.Wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+}
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #a6b4cd;
+
+}
+
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c8d9f5;
+    border-radius: 15px;
+}
+
+.select-box select{
+width: auto;
+}
+
+.select-box img{
+    max-width: 25px;
+}
+
+
+button {
+    background-color: #c8d9f5; /* Green background */
+    border: none; /* No border */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 12px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #a6b4cd; /* Darker green on hover */
+}
